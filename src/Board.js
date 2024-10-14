@@ -1,8 +1,11 @@
 import Dice from "./Dice";
+import "./Board.css";
 
-function Board({ name, color, num, sum, gameHistory }) {
+function Board({ name, color, num, sum, gameHistory, className = "" }) {
+  const classNames = `Board ${className}`;
+
   return (
-    <div>
+    <div className={classNames}>
       <h2>{name}</h2>
       <Dice color={color} num={num} />
       <h2>총점</h2>

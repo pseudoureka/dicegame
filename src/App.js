@@ -46,9 +46,16 @@ function App() {
           처음부터
         </Button>
       </div>
-      <div>
-        <Board color="blue" name="나" num={num} sum={sum} gameHistory={gameHistory} />
-        <Board color="red" name="상대" num={otherNum} sum={otherSum} gameHistory={otherGameHistory} />
+      <div className="App-boards">
+        <Board className="App-board" color="blue" name="나" num={num} sum={sum} gameHistory={gameHistory} />
+        <Board
+          className="App-board"
+          color="red"
+          name="상대"
+          num={otherNum}
+          sum={otherSum}
+          gameHistory={otherGameHistory}
+        />
       </div>
     </div>
   );
